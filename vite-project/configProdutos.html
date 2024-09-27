@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./public/SuperMarkt_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperMarkt</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="Produtos"></div>
+
+    <div>
+      <div className="conta">
+          <div className="men">
+              <nav>
+                  <button onclick="adcionarProduto()">Adicionar Produto</button>
+                  <button onclick="removerProduto()">Remoer Produto</button>
+                  <button onclick="listarProduto()">Listar Produtos</button>
+                  <button onclick="editarProduto()">Editar Produto</button>
+                  <button onclick="adcionarPromocao()">Adcionar Promoção</button>
+                  <button onclick="removerPromocao()">Remover Promoção</button>
+                  <button onclick="listarPromocao()">Listar Promoção</button>
+                  <button onclick="editarPromocao()">Editar Promoção</button>
+              </nav>
+          </div>
+      </div>
+    </div>
+    
+    <script type="module" src="./src/main.jsx"></script>
+    <script type="module" src="./src/produtos.jsx"></script>
+  </body>
+</html>

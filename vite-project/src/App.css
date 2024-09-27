@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #1b83a3fa;
+  width: 100%;
+  padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+}
+
+.container{
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu{
+  width: 100%; 
+}
+
+.menu nav a {
+  color: #000000;
+  text-decoration: none;
+  padding-right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu nav a::after{
+  content: " ";
+  width: 0px;
+  height: 4px;
+  background-image: linear-gradient(45deg, #00ffff,#7fffd4);
+  position: absolute;
+  top: 32px;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.menu nav a:hover::after{
+  width: 90px;
+}
+
+.containe{
+  max-width: 1080px;
+  margin: 0 left;
+}
+
+form{
+  display: inline-block;
+  background-color: #ffffff;
+  max-width: 250px;
+  height: 255px;
+  padding: 2px;
+  border-radius: 25px;
+}
+
+form p{
+  display: inline-block;
+  font-size: 15px;
+  text-align: left;
+  margin: 5px 0;
+}
+
+.input-single{
+  position: relative;
+  margin: 10px 0;
+}
+
+.input-single label{
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  transition: all 0.2s;
+  cursor: text;
+}
+
+.input{
+  width: 90%;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  padding: 5px;
+  font-size: 17px;
+  outline: 0;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+  transform: translateY(-24px);
+  font-size: 12px;
+  color: #2d5966;
+}
+
+.text-content{
+  font-size: 18px;
+}
+
+.ab {
+  margin-top: 112px;
+  padding: 0px 10px;
+}
