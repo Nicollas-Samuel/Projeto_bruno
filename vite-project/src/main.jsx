@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import Login from './login.jsx'
 import Funcionario from './func.jsx'
-import Produtos from './produtos.jsx'
+import adicionarProdutos from './produtos.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -24,8 +24,8 @@ createRoot(document.getElementById('funcionario')).render(
   </StrictMode>
 )
 
-createRoot(document.getElementById('produto')).render(
+createRoot(document.getElementById('Produtos')).render(
   <StrictMode>
-    <Produtos />
+    <adicionarProdutos />
   </StrictMode>
 )

@@ -1,32 +1,6 @@
 import './App.css'
 
-function Produtos() {
-  return (
-    <>
-    <div>
-        <div className="conta">
-            <div className="men">
-                <nav>
-                    <a href="#"> Remoer Produto </a>
-                    <a href="#"> Configuração de funcionários </a>
-                    <a href="#"> Configuração de produtos</a>
-                    <button onclick="adcionarProduto()">Adicionar Produto</button>
-                    <button onclick="removerProduto()">Remoer Produto</button>
-                    <button onclick="listarProduto()">Listar Produtos</button>
-                    <button onclick="editarProduto()">Editar Produto</button>
-                    <button onclick="adcionarPromocao()">Adcionar Promoção</button>
-                    <button onclick="removerPromocao()">Remover Promoção</button>
-                    <button onclick="listarPromocao()">Listar Promoção</button>
-                    <button onclick="editarPromocao()">Editar Promoção</button>
-                </nav>
-            </div>
-        </div>
-    </div>
-    </>
-  )
-}
-
-export function adicionarProdutos() {
+const adicionarProdutos = () => {
   return(
     <>
       <div>
@@ -56,6 +30,8 @@ export function adicionarProdutos() {
   )
 }
 
+//module.exoport = ()
+
 function removerProduto() {
 
 }
@@ -83,4 +59,4 @@ function listarPromocao(){
 function editarPromocao(){
 
 }
-export default Produtos
+export default adicionarProdutos
